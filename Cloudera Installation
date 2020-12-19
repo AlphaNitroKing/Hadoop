@@ -69,4 +69,4 @@ password : admin
 	  select user ubuntu 
 	  all users accept same private key (give the .pem key created for the instances)
 
-
+ 
