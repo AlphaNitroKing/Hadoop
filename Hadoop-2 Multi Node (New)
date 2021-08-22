@@ -39,7 +39,7 @@ sudo chown -R hduser:hadoop /usr/local/hadoop
 readlink -f $(which java)
 nano ~/.bashrc
 # -- HADOOP ENVIRONMENT VARIABLES START -- #
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 export HADOOP_HOME=/usr/local/hadoop
 export PATH=$PATH:$HADOOP_HOME/bin
 export PATH=$PATH:$HADOOP_HOME/sbin
@@ -58,7 +58,7 @@ cd /usr/local/hadoop/etc/hadoop/
 
 #Update hadoop-env.sh
 nano hadoop-env.sh
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 export HADOOP_LOG_DIR=/var/log/hadoop
 sudo mkdir /var/log/hadoop/
 sudo chown -R hduser:hadoop /var/log/hadoop
