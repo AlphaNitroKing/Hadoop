@@ -30,9 +30,9 @@ java -version
 
 
 # Download and Install Hadoop
-wget -c https://archive.apache.org/dist/hadoop/common/hadoop-2.9.2/hadoop-2.9.2.tar.gz
-tar -xzvf hadoop-2.9.2.tar.gz
-sudo mv hadoop-2.9.2 /usr/local/hadoop
+wget -c https://downloads.apache.org/hadoop/common/hadoop-2.10.1/hadoop-2.10.1.tar.gz
+tar -xzvf hadoop-2.10.1.tar.gz
+sudo mv hadoop-2.10.1 /usr/local/hadoop
 sudo chown -R hduser:hadoop /usr/local/hadoop
 
 # Set Enviornment Variable
@@ -232,7 +232,7 @@ dsh -a jps
 
 hdfs dfs -mkdir /user
 hdfs dfs -mkdir /user/ubuntu
-hdfs dfs -put hadoop-2.9.2.tar.gz /user/ubuntu
+hdfs dfs -put hadoop-2.10.1.tar.gz /user/ubuntu
 hdfs dfs -ls 
 hdfs dfs -ls -R
 
